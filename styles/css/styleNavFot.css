@@ -1,0 +1,17 @@
+.navbar,footer{
+    background-color: #1B4332;
+}
+.nav-footer{
+    color: white;
+    text-decoration-color:white;
+}
+a:hover{
+    color:lightgrey;
+}
+.nav-links-footer{
+    color: #1B4332;
+    
+}
+.cuerpoweb{
+    background-color: #F8F9FA;
+}
