@@ -1,0 +1,31 @@
+/* Estilo para el menú de navegación lateral */
+#proH1{
+    color: #26573c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#product-filters .list-group-item {
+    border: none;
+    padding: 12px 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-dark);
+    background-color: #F9EED9;;
+    transition: all 0.3s ease;
+}
+
+#product-filters .list-group-item.active {
+    background-color: var(--primary-green) !important;
+    color: black; !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(45, 106, 79, 0.2);
+}
+
+#product-filters .list-group-item:hover:not(.active) {
+    background-color: #F9EED9;;
+    padding-left: 25px; /* Efecto sutil al pasar el mouse */
+}
+
+/* Ajuste para la tabla dentro de la tarjeta */
+.table-sm td {
+    padding: 0.3rem 0;
+    font-size: 0.85rem;
+}
