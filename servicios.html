@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/css/styleNavFot.css">
+    <link rel="stylesheet" href="styles/css2/servicio.css">
     <title>Inicio</title>
 </head>
 
@@ -47,33 +48,394 @@
             </nav>
         </div>
 
-        <div class="row">
-            <!--Aqui va el main-->
+        <!--Aqui va el main-->
+        <div class="container-fluid py-5" style="background-color: #FCF8F0;">
+            <div class="row">
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold" id="proH1">Nuestros Productos</h1>
+                    <p class="lead text-muted">Descubre nuestra amplia gama de productos inteligentes para tu hogar.</p>
+                </div>
+                <aside class="col-lg-3 mb-4">
+                    <div class="sticky-top" style="top: 20px;">
+                        <h4 class="fw-bold mb-3" style="font-family: 'Open Sans', sans-serif; color: #2D6A4F;">
+                            Categorías</h4>
+                        <div class="list-group shadow-sm" id="product-filters">
+                            <button class="list-group-item list-group-item-action active"
+                                onclick="filterProjects('todos', event)">
+                                <i class="fas fa-th-large me-2"></i> Todos los Productos
+                            </button>
+                            <button class="list-group-item list-group-item-action"
+                                onclick="filterProjects('iluminacion', event)">
+                                <i class="fas fa-lightbulb me-2"></i> Iluminación
+                            </button>
+                            <button class="list-group-item list-group-item-action"
+                                onclick="filterProjects('seguridad', event)">
+                                <i class="fas fa-shield-alt me-2"></i> Seguridad
+                            </button>
+                            <button class="list-group-item list-group-item-action"
+                                onclick="filterProjects('clima', event)">
+                                <i class="fas fa-leaf me-2"></i> Energía y Clima
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="col-lg-9">
+                    <div class="row g-4 justify-content-start">
+                        <div class="col project-item cat-clima">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <img src="img/productos/termostato.jpg" class="card-img-top project-img"
+                                    alt="Termostato">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">Control de Clima AI</h5>
+                                    <table class="table table-sm table-borderless small mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted">Ahorro:</td>
+                                                <td class="fw-bold text-end">Hasta 30% anual</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Sensores:</td>
+                                                <td class="fw-bold text-end">Humedad / Temp.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Mando:</td>
+                                                <td class="fw-bold text-end">Voz (Alexa/Google)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="small text-muted">Stock Disponible</span>
+                                            <span class="small fw-bold">90%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-4 text-center">
+                                    <button class="btn btn-outline-dark rounded-pill w-100">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col project-item cat-iluminacion">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <img src="img/productos/cinta.jpg" class="card-img-top project-img" alt="Cinta LED">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">Cintas LED Neon-Sync</h5>
+                                    <table class="table table-sm table-borderless small mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted">Longitud:</td>
+                                                <td class="fw-bold text-end">5 Metros</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Música:</td>
+                                                <td class="fw-bold text-end">Sincronización Rítmica</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Corte:</td>
+                                                <td class="fw-bold text-end">Cada 10 cm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="small text-muted">Stock Disponible</span>
+                                            <span class="small fw-bold">80%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-4 text-center">
+                                    <button class="btn btn-outline-dark rounded-pill w-100">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col project-item cat-clima">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <img src="img/productos/cortinas.jpg" class="card-img-top project-img" alt="Cortinas">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">Motores de Persianas</h5>
+                                    <table class="table table-sm table-borderless small mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted">Carga Máx:</td>
+                                                <td class="fw-bold text-end">45 Kg</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Ruido:</td>
+                                                <td class="fw-bold text-end">
+                                                    < 30 dB</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Automat:</td>
+                                                <td class="fw-bold text-end">Por horario/Luz</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="small text-muted">Stock Disponible</span>
+                                            <span class="small fw-bold">50%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-4 text-center">
+                                    <button class="btn btn-outline-dark rounded-pill w-100">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col project-item cat-iluminacion">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <img src="img/productos/foco.jpg" class="card-img-top project-img" alt="Foco">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">Focos LED RGB Inteligentes</h5>
+                                    <table class="table table-sm table-borderless small mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted">Colores:</td>
+                                                <td class="fw-bold text-end">16 Millones</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Flujo:</td>
+                                                <td class="fw-bold text-end">1050 Lúmenes</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Base:</td>
+                                                <td class="fw-bold text-end">E27 Estándar</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="small text-muted">Stock Disponible</span>
+                                            <span class="small fw-bold">100%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-4 text-center">
+                                    <button class="btn btn-outline-dark rounded-pill w-100">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col project-item cat-clima">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <img src="img/productos/termostato.jpg" class="card-img-top project-img"
+                                    alt="Termostato">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">Control de Clima AI</h5>
+                                    <table class="table table-sm table-borderless small mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted">Ahorro:</td>
+                                                <td class="fw-bold text-end">Hasta 30% anual</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Sensores:</td>
+                                                <td class="fw-bold text-end">Humedad / Temp.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Mando:</td>
+                                                <td class="fw-bold text-end">Voz (Alexa/Google)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="small text-muted">Stock Disponible</span>
+                                            <span class="small fw-bold">90%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-4 text-center">
+                                    <button class="btn btn-outline-dark rounded-pill w-100">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 project-item cat-seguridad">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <img src="img/productos/camara-exterior.jpg" class="card-img-top project-img"
+                                    alt="Cámara Exterior">
+
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">Cámara IA Exterior Pro</h5>
+
+                                    <table class="table table-sm table-borderless small mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted">Resolución:</td>
+                                                <td class="fw-bold text-end">2K / Ultra HD</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Detección:</td>
+                                                <td class="fw-bold text-end">Humanos por IA</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Resistencia:</td>
+                                                <td class="fw-bold text-end">IP67 (Intemperie)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="small text-muted">Stock Disponible</span>
+                                            <span class="small fw-bold">20%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer bg-white border-0 pb-4 text-center">
+                                    <button class="btn btn-outline-dark rounded-pill w-100">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 project-item cat-seguridad">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <img src="img/productos/detector-humo.jpg" class="card-img-top project-img"
+                                    alt="Detector de Humo">
+
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">Detector de Humo y Gas Smart</h5>
+
+                                    <table class="table table-sm table-borderless small mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted">Detección:</td>
+                                                <td class="fw-bold text-end">Humo / CO / Gas LP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Alarma:</td>
+                                                <td class="fw-bold text-end">85dB + Alerta App</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Autonomía:</td>
+                                                <td class="fw-bold text-end">Batería 5 años</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="small text-muted">Stock Disponible</span>
+                                            <span class="small fw-bold">60%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer bg-white border-0 pb-4 text-center">
+                                    <button class="btn btn-outline-dark rounded-pill w-100">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col project-item cat-iluminacion">
+                            <div class="card h-100 border-0 shadow-sm project-card">
+                                <img src="img/productos/cinta.jpg" class="card-img-top project-img" alt="Cinta LED">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold mb-3">Cintas LED Neon-Sync</h5>
+                                    <table class="table table-sm table-borderless small mb-3">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted">Longitud:</td>
+                                                <td class="fw-bold text-end">5 Metros</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Música:</td>
+                                                <td class="fw-bold text-end">Sincronización Rítmica</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">Corte:</td>
+                                                <td class="fw-bold text-end">Cada 10 cm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="small text-muted">Stock Disponible</span>
+                                            <span class="small fw-bold">80%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white border-0 pb-4 text-center">
+                                    <button class="btn btn-outline-dark rounded-pill w-100">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <div class="row">
             <footer class="col-md-12 footer text-center text-light p-5">
                 <div class="row">
                     <div class="col-md-4">
-                        <img id="logoDomotica" src="img/logo2.png" class="img-fluid rounded-circle pb-4" width="300px" alt="logo de la empresa">
+                        <img id="logoDomotica" src="img/logo2.png" class="img-fluid rounded-circle pb-4" width="300px"
+                            alt="logo de la empresa">
                         <p>Síguenos en nuestras<br>Redes Sociales</p>
                         <a href="https://www.facebook.com/profile.php?id=100063787961520" class="redes-sociales"
-                            target="_blank" rel="noopener noreferrer"><img src="iconitos/facebook.svg"class="bg bg-light rounded"class="bg bg-light rounded" alt="facebook"></a>
+                            target="_blank" rel="noopener noreferrer"><img src="iconitos/facebook.svg"
+                                class="bg bg-light rounded" class="bg bg-light rounded" alt="facebook"></a>
                         <a href="https://www.instagram.com/Domotica_Para_Tu_Hogar/" class="redes-sociales"
-                            target="_blank" rel="noopener noreferrer"><img src="iconitos/instagram.svg"class="bg bg-light rounded"class="bg bg-light rounded"
-                                alt="instagram"></a>
+                            target="_blank" rel="noopener noreferrer"><img src="iconitos/instagram.svg"
+                                class="bg bg-light rounded" class="bg bg-light rounded" alt="instagram"></a>
                         <a href="https://x.com/Domotica_Hogar" class="redes-sociales" target="_blank"
-                            rel="noopener noreferrer"><img src="iconitos/x-twitter.svg" class="bg bg-light rounded"class="bg bg-light rounded"alt="twitter"></a>
+                            rel="noopener noreferrer"><img src="iconitos/x-twitter.svg" class="bg bg-light rounded"
+                                class="bg bg-light rounded" alt="twitter"></a>
                     </div>
 
                     <div class="col-md-4">
                         <ul class="nav-links-footer">
-                            <li class="nav-links-footer "><a class="navbar-brand nav-footer" href="index.html">Inicio</a></li>
-                            <li class="nav-links-footer"><a class="navbar-brand nav-footer " href="nosotros.html">¿Quienes
+                            <li class="nav-links-footer "><a class="navbar-brand nav-footer"
+                                    href="index.html">Inicio</a></li>
+                            <li class="nav-links-footer"><a class="navbar-brand nav-footer "
+                                    href="nosotros.html">¿Quienes
                                     somos?</a></li>
-                            <li class="nav-links-footer"><a class="navbar-brand nav-footer " href="servicios.html">Servicios</a>
+                            <li class="nav-links-footer"><a class="navbar-brand nav-footer "
+                                    href="servicios.html">Servicios</a>
                             </li>
-                            <li class="nav-links-footer"><a class="navbar-brand nav-footer" href="proyectos.html">Proyectos</a>
+                            <li class="nav-links-footer"><a class="navbar-brand nav-footer"
+                                    href="proyectos.html">Proyectos</a>
                             </li>
                             <li class="nav-links-footer"><a class="navbar-brand nav-footer "
                                     href="contacto.html">Contáctanos</a></li>
@@ -86,9 +448,12 @@
 
                     <div class="col-md-4 text-light">
                         <h4 class="">Contacto</h4>
-                        <p> <img src="iconitos/gps.svg" alt="ubicación" class="bg bg-light rounded"> Dirección: Entre Av.Ayacucho y c/Jordan (plena esquina)</p>
-                        <p> <img src="iconitos/phone.svg" alt="teléfono" class="bg bg-light rounded"> Celular: +591 78852177</p>
-                        <p> <img src="iconitos/mail.svg" alt="correo" class="bg bg-light rounded"> Correo: DomiFy.com</p>
+                        <p> <img src="iconitos/gps.svg" alt="ubicación" class="bg bg-light rounded"> Dirección: Entre
+                            Av.Ayacucho y c/Jordan (plena esquina)</p>
+                        <p> <img src="iconitos/phone.svg" alt="teléfono" class="bg bg-light rounded"> Celular: +591
+                            78852177</p>
+                        <p> <img src="iconitos/mail.svg" alt="correo" class="bg bg-light rounded"> Correo: DomiFy.com
+                        </p>
                     </div>
 
                 </div>
@@ -104,6 +469,7 @@
     </div>
 
     <script src="javaScript/js/bootstrap.bundle.min.js"></script>
+    <script src="javaScript/js/otro/servicio.js"></script>
 </body>
 
 </html>
