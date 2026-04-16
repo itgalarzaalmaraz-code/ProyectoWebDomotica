@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/css/styleNavFot.css">
+    <link rel="stylesheet" href="styles/css2/servicioss.css">
     <title>Inicio</title>
 </head>
 
@@ -47,33 +48,305 @@
             </nav>
         </div>
 
-        <div class="row">
-            <!--Aqui va el main-->
+        <div class="row cuerpoweb">
+            <main class="col-md-12">
+
+                <!-- Cursos -->
+                <section id="cursos" class="py-5 cursos-section">
+
+                    <div class="container">
+
+                        <div class="row text-center mb-5">
+                            <h1>Domina la Domótica <span class="badge bg-success">Nuevo</span></h1>
+                            <h5>Aprende habilidades del futuro y obtén certificación profesional</h5>
+                        </div>
+
+                        <div class="alert alert-info text-center">
+                            Cursos disponibles todo el año ¡Cupos limitados!
+                        </div>
+
+                        <div class="row align-items-center mb-5">
+                            <div class="col-md-6 text-center align-items-center">
+                                <h4>
+                                    Aprende instalación, soporte y reparación de sistemas inteligentes.
+                                </h4>
+
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item">Instalación de dispositivos</li>
+                                    <li class="list-group-item">Configuración y automatización</li>
+                                    <li class="list-group-item">Mantenimiento y reparación</li>
+                                </ul>
+
+                                <a class="mainDirections" href="#formCursos" id="btnScrollForm"
+                                    data-bs-toggle="collapse">
+                                    Inscribite Ahora
+                                </a>
+
+                                <button class="btn btn-outline-dark m-3" data-bs-toggle="modal"
+                                    data-bs-target="#modalCurso">
+                                    Ver detalles
+                                </button>
+
+                                <div class="modal fade" id="modalCurso">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Detalles del Curso</h5>
+                                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                Aprende desde cero hasta nivel avanzado en domótica.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <video class="img-fluid rounded shadow" autoplay muted loop>
+                                    <source src="vid/vidCur.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="slider mb-5">
+                            <div class="slide-track">
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlide1.mp4" type="video/mp4">
+                                    </video></div>
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlide.mp4" type="video/mp4">
+                                    </video></div>
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlide3.mp4" type="video/mp4">
+                                    </video></div>
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlides4.mp4" type="video/mp4">
+                                    </video></div>
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlides5.mp4" type="video/mp4">
+                                    </video></div>
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlides6.mp4" type="video/mp4">
+                                    </video></div>
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlides7.mp4" type="video/mp4">
+                                    </video></div>
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlide1.mp4" type="video/mp4">
+                                    </video></div>
+                                <div class="slide-item"><video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidCurSlide.mp4" type="video/mp4">
+                                    </video></div>
+                            </div>
+                        </div>
+
+                        <div class="row text-center">
+
+                            <div class="col-md-4">
+                                <div class="card shadow p-4">
+                                    <h6>Certificación <span class="badge bg-primary">Oficial</span></h6>
+                                    <p>Obtén certificados con valor curricular</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card shadow p-4">
+                                    <h6>Alta Demanda <span class="badge bg-warning text-dark">TOP</span></h6>
+                                    <p>Habilidad clave en el mercado actual</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card shadow p-4">
+                                    <h6>Práctico</h6>
+                                    <p>Aprende con casos reales</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="collapse mt-5" id="formCursos">
+
+
+
+                            <div class="card border-0 shadow-sm p-4" id="cardForm" style="border-radius: 12px;">
+                                <form id="contactForm" class="needs-validation" novalidate>
+                                    <div class="row g-3">
+                                        <div class="col-md-12 text-center">
+                                            <h3 id="titForm">Inscribete y Aprende con Nosotros sobre la tecnologia
+                                                Moderna
+                                                en el Hogar
+                                            </h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="userName" class="form-label fw-bold">Nombre Completo</label>
+                                            <input type="text" class="form-control custom-input" id="userName" required
+                                                minlength="3">
+                                            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="userEmail" class="form-label fw-bold">Correo
+                                                Electrónico</label>
+                                            <input type="email" class="form-control custom-input" id="userEmail"
+                                                required>
+                                            <div class="invalid-feedback">Ingresa un correo válido
+                                                (ejemplo@mail.com).</div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label for="userPhone" class="form-label fw-bold">Teléfono de
+                                                contacto</label>
+                                            <input type="tel" class="form-control custom-input" id="userPhone"
+                                                pattern="[0-9]{7,10}" placeholder="Ej: 41234567" required>
+                                            <div class="invalid-feedback">Ingresa un número de 7 a 10 dígitos.</div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <button class="btn btn-accent w-100 py-3 fw-bold" type="submit">
+                                                ENVIAR SOLICITUD <i class="fas fa-paper-plane ms-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Servicio tecnico -->
+
+                <section id="servicios" class="py-5 servicios-section">
+
+                    <div class="container">
+
+                        <div class="row text-center mb-5">
+                            <h1>Servicios Técnicos</h1>
+                        </div>
+
+                        <ul class="nav nav-tabs justify-content-center mb-4">
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="tab"
+                                    data-bs-target="#instalacion">Instalación</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab"
+                                    data-bs-target="#reparacion">Reparación</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content text-center">
+
+                            <div class="tab-pane" id="instalacion">
+                                <h4>Instalación Profesional de Sistemas Inteligentes</h4>
+
+                                <p>
+                                    Implementamos soluciones completas de domótica adaptadas a tu hogar.
+                                    Nuestro equipo se encarga de la configuración total para que disfrutes
+                                    de automatización sin complicaciones.
+                                </p>
+
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item">Instalación de cámaras de seguridad</li>
+                                    <li class="list-group-item">Automatización de luces y sensores</li>
+                                    <li class="list-group-item">Configuración de asistentes inteligentes</li>
+                                </ul>
+
+                                <a href="contacto.html" class="mainDirections">Solicitar instalación</a>
+                            </div>
+
+                            <div class="tab-pane fade" id="reparacion">
+                                <h4>Reparación y Solución de Problemas</h4>
+
+                                <p>
+                                    Detectamos y solucionamos fallas en tus dispositivos inteligentes,
+                                    garantizando un funcionamiento óptimo y continuo.
+                                </p>
+
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item">Diagnóstico de fallas</li>
+                                    <li class="list-group-item">Reparación de dispositivos</li>
+                                    <li class="list-group-item">Optimización de conexión</li>
+                                </ul>
+
+                                <a href="contacto.html" class="mainDirections">Solicitar soporte</a>
+                            </div>
+
+                        </div>
+
+                        <div class="row text-center mt-5">
+
+                            <div class="col-md-4">
+                                <div class="card shadow p-4 service-card" data-bs-toggle="tooltip"
+                                    title="Servicio rápido">
+                                    <video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidSerInst.mp4" type="video/mp4">
+                                    </video>
+                                    <h6>Instalación</h6>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card shadow p-4 service-card" data-bs-toggle="tooltip"
+                                    title="Solución inmediata">
+                                    <video autoplay loop class="img-fluid rounded shadow">
+                                        <source src="vid/vidRepar.mp4" type="video/mp4">
+                                    </video>
+                                    <h6>Mantenimiento</h6>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card shadow p-4 service-card" data-bs-toggle="tooltip"
+                                    title="Optimización continua">
+                                    <img src="img/mantenimiento.png" class="img-fluid mb-3">
+                                    <h6>Productos</h6>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+
+            </main>
         </div>
 
         <div class="row">
             <footer class="col-md-12 footer text-center text-light p-5">
                 <div class="row">
                     <div class="col-md-4">
-                        <img id="logoDomotica" src="img/logo2.png" class="img-fluid rounded-circle pb-4" width="300px" alt="logo de la empresa">
+                        <img id="logoDomotica" src="img/logo2.png" class="img-fluid rounded-circle pb-4" width="300px"
+                            alt="logo de la empresa">
                         <p>Síguenos en nuestras<br>Redes Sociales</p>
                         <a href="https://www.facebook.com/profile.php?id=100063787961520" class="redes-sociales"
-                            target="_blank" rel="noopener noreferrer"><img src="iconitos/facebook.svg"class="bg bg-light rounded"class="bg bg-light rounded" alt="facebook"></a>
+                            target="_blank" rel="noopener noreferrer"><img src="iconitos/facebook.svg"
+                                class="bg bg-light rounded" class="bg bg-light rounded" alt="facebook"></a>
                         <a href="https://www.instagram.com/Domotica_Para_Tu_Hogar/" class="redes-sociales"
-                            target="_blank" rel="noopener noreferrer"><img src="iconitos/instagram.svg"class="bg bg-light rounded"class="bg bg-light rounded"
-                                alt="instagram"></a>
+                            target="_blank" rel="noopener noreferrer"><img src="iconitos/instagram.svg"
+                                class="bg bg-light rounded" class="bg bg-light rounded" alt="instagram"></a>
                         <a href="https://x.com/Domotica_Hogar" class="redes-sociales" target="_blank"
-                            rel="noopener noreferrer"><img src="iconitos/x-twitter.svg" class="bg bg-light rounded"class="bg bg-light rounded"alt="twitter"></a>
+                            rel="noopener noreferrer"><img src="iconitos/x-twitter.svg" class="bg bg-light rounded"
+                                class="bg bg-light rounded" alt="twitter"></a>
                     </div>
 
                     <div class="col-md-4">
                         <ul class="nav-links-footer">
-                            <li class="nav-links-footer "><a class="navbar-brand nav-footer" href="index.html">Inicio</a></li>
-                            <li class="nav-links-footer"><a class="navbar-brand nav-footer " href="nosotros.html">¿Quienes
+                            <li class="nav-links-footer "><a class="navbar-brand nav-footer"
+                                    href="index.html">Inicio</a></li>
+                            <li class="nav-links-footer"><a class="navbar-brand nav-footer "
+                                    href="nosotros.html">¿Quienes
                                     somos?</a></li>
-                            <li class="nav-links-footer"><a class="navbar-brand nav-footer " href="servicios.html">Servicios</a>
+                            <li class="nav-links-footer"><a class="navbar-brand nav-footer "
+                                    href="servicios.html">Servicios</a>
                             </li>
-                            <li class="nav-links-footer"><a class="navbar-brand nav-footer" href="proyectos.html">Proyectos</a>
+                            <li class="nav-links-footer"><a class="navbar-brand nav-footer"
+                                    href="proyectos.html">Proyectos</a>
                             </li>
                             <li class="nav-links-footer"><a class="navbar-brand nav-footer "
                                     href="contacto.html">Contáctanos</a></li>
@@ -86,9 +359,12 @@
 
                     <div class="col-md-4 text-light">
                         <h4 class="">Contacto</h4>
-                        <p> <img src="iconitos/gps.svg" alt="ubicación" class="bg bg-light rounded"> Dirección: Entre Av.Ayacucho y c/Jordan (plena esquina)</p>
-                        <p> <img src="iconitos/phone.svg" alt="teléfono" class="bg bg-light rounded"> Celular: +591 78852177</p>
-                        <p> <img src="iconitos/mail.svg" alt="correo" class="bg bg-light rounded"> Correo: DomiFy.com</p>
+                        <p> <img src="iconitos/gps.svg" alt="ubicación" class="bg bg-light rounded"> Dirección: Entre
+                            Av.Ayacucho y c/Jordan (plena esquina)</p>
+                        <p> <img src="iconitos/phone.svg" alt="teléfono" class="bg bg-light rounded"> Celular: +591
+                            78852177</p>
+                        <p> <img src="iconitos/mail.svg" alt="correo" class="bg bg-light rounded"> Correo: DomiFy.com
+                        </p>
                     </div>
 
                 </div>
@@ -102,6 +378,54 @@
         </div>
 
     </div>
+    <script>
+        const form = document.querySelector('#contactForm')
+
+        form.addEventListener('submit', function (event) {
+            // Si el formulario no es válido según los atributos HTML (required, pattern, etc.)
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            } else {
+                // Aquí entraría la lógica de envío real (AJAX/Fetch)
+                event.preventDefault()
+                alert('¡Mensaje enviado con éxito! Un técnico se contactará pronto.')
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+
+        document.getElementById("btnScrollForm").addEventListener("click", function () {
+
+            setTimeout(() => {
+                document.getElementById("formCursos").scrollIntoView({
+                    behavior: "smooth"
+                });
+            }, 300); // espera a que el collapse se abra
+
+        });
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+            // Validacion
+            (function () {
+                'use strict'
+                const form = document.querySelector('#formCursosBoot')
+
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        event.preventDefault()
+                        alert('Solicitud enviada correctamente')
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })()
+
+    </script>
 
     <script src="javaScript/js/bootstrap.bundle.min.js"></script>
 </body>
